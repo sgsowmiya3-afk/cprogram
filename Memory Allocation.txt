@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main() {
+    int n,i;
+    int *array;
+    int sum = 0;
+    
+    printf("Enter the number of elements:");
+    scanf("%d", &n);
+    
+    array = (int*) malloc (n *sizeof(int));
+    if(array == NULL) {
+        printf("Memory not allocated \n");
+        return 0;
+    }
+}
