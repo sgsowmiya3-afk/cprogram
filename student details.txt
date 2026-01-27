@@ -1,0 +1,18 @@
+#include<stdio.h>
+struct student {
+    char firstname[20];
+    char lastname[20];
+};
+struct details{
+    char dept[20];
+    int year;
+    struct student name;
+};
+11
+int main() {
+    struct student stdname = {"manoj","kumar"};
+    struct details std1 = {"ECE",2026,stdname};
+    printf("My name is %s %s from the department %s,completed int the year of %d",std1.name.firstname,std1.name.lastname,std1.dept,std1.year);
+    
+    return 0;
+}
