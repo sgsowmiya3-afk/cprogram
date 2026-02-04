@@ -7,8 +7,7 @@ int main() {
     printf("Enter the number of elements:");
     scanf("%d",&n);
     array=(int*)calloc(n,sizeof(int));
-    if(array==NULL) {
-        printf("Memory not allocated\n");
+    if(array==NULL) {t allocated\n");
         return 0;
 } 
 else{
@@ -25,3 +24,4 @@ free(array);
 printf("Memory deleted successfully");
 return 0;
 }
+        printf("Memory no
